@@ -1,0 +1,149 @@
+:root {
+
+     /* Color */
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
+    --white: #FFFFFF;
+
+  /* 🎨 Font Families */
+  --font-primary: "Young Serif", serif;
+  --font-secondary: "Outfit", sans-serif;
+
+  /* 🔠 Text Presets */
+  --tp1: 400 2.5rem/100% var(--font-primary);   /* 40px */
+  --tp1m: 400 2.25rem/100% var(--font-primary); 
+  --tp2: 400 1.75rem/100% var(--font-primary);  /* 28px */
+  --tp3: 600 1.25rem/100% var(--font-secondary);/* 20px SemiBold */
+  --tp4: 400 1rem/150% var(--font-secondary);   /* 16px Regular */
+  --tp4b: 700 1rem/150% var(--font-secondary);  /* 16px Bold */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.recipe_image{
+    max-width: 100%;
+    height: 171px;
+}
+
+.body_containt{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 40px 32px;
+}
+
+.title h1{
+    margin-bottom: 24px;
+    font: var(--tp1m);
+}
+.title h3{
+    font: var(--tp4);
+}
+
+.preparation{
+    background-color: var(--rose-50);
+    padding: 24px;
+}
+.preparation h3{
+    font: var(--tp3);
+    color: var(--rose-800);
+    margin-bottom: 16px;
+}
+ ul, ol{
+   
+   border: 2px solid greenyellow;
+   
+}
+
+ li{
+    margin-bottom: 8px;
+    font: var(--tp4);
+    margin-left: 16px;
+    padding-left: 8px;
+    border: 2px solid rgb(16, 19, 211);
+}
+    
+
+ li:last-child{
+     margin-bottom: 0;
+}
+
+
+h2{
+    margin-bottom: 24px;
+    font: var(--tp2);
+    color: var(--brown-800);
+}
+li, p{
+    color: var(--stone-600);
+}
+span{
+    font: var(--tp4b);
+}
+li::marker{
+     font: var(--tp4b);
+}
+
+@media (min-width: 376px) {
+    body{
+        max-width: 768px;
+        padding: 128px 48px;
+        /* background-color: var(--stone-100); */
+        background-color: blueviolet;
+    }
+    .card_container{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border-radius: 24px;
+        background-color: var(--white);
+    }
+    .recipe_image{
+        max-height: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+   body{
+    padding: 0;
+   }
+  }
+
+@media (max-width: 375px) {
+   body{
+    padding: 0;
+   }
+  }
